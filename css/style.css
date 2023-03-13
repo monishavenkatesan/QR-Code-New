@@ -1,13 +1,54 @@
-:root{
-  --clr-secondary-100:0, 0%, 100%;
-  --clr-primary-400:212, 45%, 89%;
-  --clr-primary-300:220, 15%, 55%;  
-  --clr-secondary-300:218, 44%, 22%;
-  
-  --fw-100:12px;
-  --fw-200:400:
-    --fw-300:700;
-  
-  --ff-primary:Outfit;
-    
+:root {
+  --clr-secondary-100: 0, 0%, 100%;
+  --clr-primary-400: 212, 45%, 89%;
+  --clr-primary-300: 220, 15%, 55%;
+  --clr-secondary-300: 218, 44%, 22%;
+
+  --fw-100: 2px;
+  --fw-200: 400;
+  --fw-300: 700;
+
+  --ff-primary: Outfit;
 }
+body {
+  margin: 0;
+  background-color: hsl(var(--clr-primary-400));
+}
+.author {
+  text-align: center;
+  font-weight: var(--fw-100);
+}
+.container {
+  background-color: hsl(var(--clr-secondary-100));
+  text-align: center;
+  position: absolute;
+  border-radius: 12px;
+  margin: 25%;
+  padding: 2rem;
+}
+p {
+  font-family: var(--ff-primary);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+p.p1 {
+  font-weight: var(--fw-300);
+}
+p.p2 {
+  font-weight: var(--fw-200);
+}
+
+@media query and (min-width: 375px) {
+  .container {
+    width: 50%;
+    height: 80%;
+  }
+}
+@media query and (min-width: 1440px) {
+  .container {
+    text-align: center;
+    width: 60%;
+    height: 90%;
+  }
+}
+
